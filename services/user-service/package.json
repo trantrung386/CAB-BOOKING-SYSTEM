@@ -1,31 +1,24 @@
 {
   "name": "user-service",
   "version": "1.0.0",
-  "description": "User Profile Management Service for CAB Booking System",
-  "main": "index.js",
+  "description": "User profile & loyalty service",
+  "main": "src/app.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
   },
-  "keywords": [
-    "cab-booking",
-    "user",
-    "microservice",
-    "profile"
-  ],
-  "author": "CAB Booking Team",
-  "license": "ISC",
   "dependencies": {
-    "amqplib": "^0.10.3",
+    "amqplib": "^0.10.4",
+    "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
-    "dotenv": "^17.2.3",
-    "express": "^5.2.1",
-    "mongoose": "^8.0.0",
-    "redis": "^5.10.0",
-    "@cab-booking/shared": "file:../../shared"
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.7.0",
+    "redis": "^4.7.0",
+    "winston": "^3.14.2"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.1.7"
   }
 }
